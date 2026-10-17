@@ -1,0 +1,18 @@
+# One-command usage: `docker compose run --rm dvcs` (runs the demo by
+# default). See DOCKER.md for the full walkthrough, and docker-entrypoint.sh
+# for the other modes (shell, test, integration-test).
+#
+# `-it`/tty is needed for the demo's colors and typed-out commands to
+# render properly, and for `shell` mode to be usable -- `docker compose
+# run` allocates one automatically when your terminal supports it.
+
+services:
+  dvcs:
+    build: .
+    image: dvcs-demo
+    # Port 8555 is only useful if you exec into the container and start a
+    # Hardhat node bound to 0.0.0.0 yourself (e.g. via `shell` mode) and
+    # want to reach it from the host, e.g. with MetaMask. The demo itself
+    # runs entirely inside the container and doesn't need this published.
+    ports:
+      - "8555:8555"
