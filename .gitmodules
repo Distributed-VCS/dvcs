@@ -1,0 +1,19 @@
+[submodule "contracts"]
+	path = contracts
+	url = https://github.com
+
+[submodule "test"]
+	path = test
+	url = https://github.com
+
+[submodule "scripts"]
+	path = scripts
+	url = https://github.com
+
+[submodule "cli"]
+	path = cli
+	url = https://github.com
+
+[submodule "examples"]
+	path = examples
+	url = https://github.com
