@@ -1,6 +1,6 @@
 [submodule "contracts"]
 	path = contracts
-	url = https://github.com
+	url = https://github.com/Distributed-VCS/contracts.git
 
 [submodule "test"]
 	path = test
