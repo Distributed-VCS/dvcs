@@ -17,3 +17,4 @@
 [submodule "examples"]
 	path = examples
 	url = https://github.com/Distributed-VCS/examples.git
+
